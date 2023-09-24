@@ -1,4 +1,4 @@
-package com.github.heliommsfilho.kafka.training.consumer;
+package com.github.heliommsfilho.kafka.training.simple.consumer;
 
 import org.apache.kafka.clients.consumer.ConsumerConfig;
 import org.apache.kafka.clients.consumer.ConsumerRecords;
@@ -51,7 +51,7 @@ public class ConsumerApp {
         properties.setProperty(ConsumerConfig.KEY_DESERIALIZER_CLASS_CONFIG, StringDeserializer.class.getName());
         properties.setProperty(ConsumerConfig.VALUE_DESERIALIZER_CLASS_CONFIG, StringDeserializer.class.getName());
         properties.setProperty(ConsumerConfig.AUTO_OFFSET_RESET_CONFIG, "earliest");
-        properties.setProperty(ConsumerConfig.GROUP_ID_CONFIG, "customer-orders-group-id");
+        properties.setProperty(ConsumerConfig.GROUP_ID_CONFIG, "customer-orders-kafkaSimple");
 
         return properties;
     }

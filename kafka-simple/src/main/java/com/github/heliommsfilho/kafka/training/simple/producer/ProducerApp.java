@@ -1,4 +1,4 @@
-package com.github.heliommsfilho.kafka.training.producer;
+package com.github.heliommsfilho.kafka.training.simple.producer;
 
 import org.apache.kafka.clients.producer.Callback;
 import org.apache.kafka.clients.producer.KafkaProducer;
